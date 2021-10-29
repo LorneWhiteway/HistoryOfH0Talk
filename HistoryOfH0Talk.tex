@@ -1,0 +1,74 @@
+% http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/examples
+% http://latex.artikel-namsu.de/english/beamer-examples.html
+
+%\documentclass{beamer}
+\documentclass[usenames,dvipsnames]{beamer}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{fancybox, graphicx}
+\usepackage{listings}
+\usepackage{tikz} % Diagrams
+\usetikzlibrary{positioning}
+\usepackage{color}
+\usepackage{textcomp} % See https://tex.stackexchange.com/questions/145416/how-to-have-straight-single-quotes-in-lstlistings
+%\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures. From https://tex.stackexchange.com/questions/238636
+\usepackage[absolute,overlay]{textpos}
+
+
+\lstset{language=bash,upquote=true} % Format listings as appropriate for bash. Inexplicably we get problems if the language is set as part of the \begin{lstlisting} command.
+
+% https://tex.stackexchange.com/questions/36030/how-to-make-a-single-word-look-as-some-code
+\definecolor{light-gray}{gray}{0.95}
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+
+% Parameters: file name, graphics options (e.g. `scale=0.3'), background colour, whom to credit, x pos for credit, y pos for credit.
+\newcommand{\insertpicturewithcredit}[6]{
+{
+  \setbeamercolor{background canvas}{bg={#3}}
+  \begin{frame}{}
+    \begin{center}
+      \begin{tikzpicture}
+        \draw (-4, 0) node[inner sep=0] {\includegraphics[{#2}]{{#1}}};
+        \draw ({#5},{#6}) node[white,fill=black,font=\footnotesize] {Credit: {#4}};
+      \end{tikzpicture}
+    \end{center}
+  \end{frame}
+ }
+}
+
+% Parameters: file name, graphics options (e.g. `scale=0.3'), background colour
+\newcommand{\insertpicture}[3]{
+{
+  \setbeamercolor{background canvas}{bg={#3}}
+  \begin{frame}{}
+    \begin{center}
+      \begin{tikzpicture}
+        \draw (0, 0) node[inner sep=0] {\includegraphics[{#2}]{{#1}}};
+      \end{tikzpicture}
+    \end{center}
+  \end{frame}
+ }
+}
+
+
+
+\usetheme{boxes}
+\usecolortheme{beaver}
+
+
+\title{The Constantly Changing Hubble Constant}
+\author{Lorne Whiteway \\ lorne.whiteway@star.ucl.ac.uk}
+\institute{Astrophysics Group \\ Department of Physics and Astronomy \\ University College London}
+\date{Presentation to the Mid Kent Astronomical Society \\ 12 November 2021 \\ Find the presentation at \alert{\url{https://tinyurl.com/_TBA}}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+
+% Image of Hubble from https://commons.wikimedia.org/wiki/File:Studio_portrait_photograph_of_Edwin_Powell_Hubble.JPG
+\insertpicturewithcredit{Studio_portrait_photograph_of_Edwin_Powell_Hubble.jpg}{angle=0,origin=l,scale=0.15}{black}{Johan Hagemeyer (1884-1962), Public domain, via Wikimedia Commons}{-4}{-3}
+
+
+\end{document}
