@@ -22,23 +22,35 @@
 \definecolor{light-gray}{gray}{0.95}
 \newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
 
+\newcommand{\mentiurl}[0]{{\url{www.menti.com}}}
+\newcommand{\menticode}[0]{{9850 5737}}
+\newcommand{\mentiinvitation}[0]{Go to \mentiurl{} (code \menticode{}) and choose one possibility:\\}
+\newcommand{\correctanswer}[1]{\textcolor{blue}{{#1} \checkmark}}
+
+% Parameters: file name, graphics options (e.g. `scale=0.3'), whom to credit, x pos for credit, y pos for credit.
+\newcommand{\imageandcredit}[5]{
+  {
+    \begin{tikzpicture}
+      \draw (-4, 0) node[inner sep=0] {\includegraphics[{#2}]{{#1}}};
+      \draw ({#4},{#5}) node[white,fill=black,font=\footnotesize] {Credit: {#3}};
+    \end{tikzpicture}
+  }
+}
+
 % Parameters: file name, graphics options (e.g. `scale=0.3'), background colour, whom to credit, x pos for credit, y pos for credit.
-\newcommand{\insertpicturewithcredit}[6]{
+\newcommand{\framewithimageandcredit}[6]{
 {
   \setbeamercolor{background canvas}{bg={#3}}
   \begin{frame}{}
     \begin{center}
-      \begin{tikzpicture}
-        \draw (-4, 0) node[inner sep=0] {\includegraphics[{#2}]{{#1}}};
-        \draw ({#5},{#6}) node[white,fill=black,font=\footnotesize] {Credit: {#4}};
-      \end{tikzpicture}
+      \imageandcredit{#1}{#2}{#4}{#5}{#6}
     \end{center}
   \end{frame}
  }
 }
 
 % Parameters: file name, graphics options (e.g. `scale=0.3'), background colour
-\newcommand{\insertpicture}[3]{
+\newcommand{\framewithimage}[3]{
 {
   \setbeamercolor{background canvas}{bg={#3}}
   \begin{frame}{}
@@ -67,8 +79,49 @@
 \frame{\titlepage}
 
 
+\begin{frame}{Interactive content}
+  \begin{block}{}
+    You are invited to go to\\
+    \begin{center}
+    \huge \alert{\mentiurl{}}\\
+    \end{center}
+    and enter code\\
+    \begin{center}
+    \huge \menticode{}
+    \end{center}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{The Universe is expanding!}
+  \begin{block}{}
+  \begin{itemize}
+  \item{But what does this actually mean?}
+  \item{How do we know it is expanding?}
+  \item{Why is it expanding?}
+  \item{How fast is it expanding?}
+  \item{Are cosmologists completely realistic about the uncertainties in their results?}
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{How do we know?}
+  \begin{columns}
+    \column{0.4\linewidth}
+    \begin{itemize}
+    \item{Everywhere we look, distant galaxies are receeding; more distant galaxies are receeding faster}
+    \item{So either we are at the centre of a cosmic conspiracy, or all the space between all the galaxies is expanding.}
+    \end{itemize}
+    \column{0.6\linewidth}
+    \centering
+    % https://en.wikipedia.org/wiki/Hubble_Ultra-Deep_Field#/media/File:Hubble_ultra_deep_field_high_rez_edit1.jpg
+    \imageandcredit{720px-Hubble_ultra_deep_field_high_rez_edit1.jpg}{height=7cm}{NASA Ultra Deep Field}{-5}{-3.2}
+  \end{columns}
+\end{frame}
+
 % Image of Hubble from https://commons.wikimedia.org/wiki/File:Studio_portrait_photograph_of_Edwin_Powell_Hubble.JPG
-\insertpicturewithcredit{Studio_portrait_photograph_of_Edwin_Powell_Hubble.jpg}{angle=0,origin=l,scale=0.15}{black}{Johan Hagemeyer (1884-1962), Public domain, via Wikimedia Commons}{-4}{-3}
+\framewithimageandcredit{Studio_portrait_photograph_of_Edwin_Powell_Hubble.jpg}{angle=0,origin=l,scale=0.15}{black}{Johan Hagemeyer (1884-1962), Public domain, via Wikimedia Commons}{-4}{-3}
+
 
 
 \end{document}
