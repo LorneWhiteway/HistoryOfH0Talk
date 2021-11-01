@@ -1,0 +1,36 @@
+Slide Outline
+
+xTitle slide
+xMentimeter slide
+xUniverse is expanding - distances between distant objects are increasing
+xEverywhere we look, distant objects are receeding. The further the object, the faster.
+xEasiest explanation is expansion.
+Balloon picture
+xRubber band example
+xMENTI question: Does the solar/system get bigger due to expansion? Do you?
+xRubber band example with bound system
+xWhat does recession velocity mean? Objects are 'moving'. SR doesn't apply.
+xQuoting the speed of expansion
+xCurrent expansion rate. H0. 70 km/s/Mpc
+History - Not part of early cosmologies. Poe (1848). Then 20th century.
+Why does the Universe expand? Initial condition; subsequent behaviour set by gravity.
+Why Gravity? Modern theory of gravity. Picture; Einstein.
+Mass/energy affects distances/angles. So contents of Universe affect expansion.
+Freidmann wrote down the equations. Picture: Freidmann.
+[Contents of Universe? or do this later?]
+Measuring expansion rate. Need recession velocity and distance
+MENTI question: Which is easier to measure?
+Speed from Doppler-like shift in spectrum - relatively easy. Picture: Vesto Slipher. First to relate redshifts to distance.
+Distance - parallax, but only so far.
+Standard candles. Cepheids. Picture: Henrietta Swan Leavitt.
+Hubble (1929) assembled the results. Picture: Hubble. Hubble graph.
+MENTI question: What H0 does this give?
+Result: H0 = 700 km/s/Mpc. Wrong!
+Trimble graph. 5 distinct amendments made over next 40 years, to get H0 between 50 and 100.
+Almost everyone underestimated their errors!
+HST. Picture Wendy Freedman.
+Currently (at least) 3 methods for measuring H0: parallax+cepheids+supernovae, CMB, gravitational waves
+Some discrepancy - should this be a worry?
+Return to contents of Universe.
+Cosmic inventory; consequences for H0. H0 history graph.
+
