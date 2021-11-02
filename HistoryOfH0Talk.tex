@@ -4,6 +4,7 @@
 %\documentclass{beamer}
 \documentclass[usenames,dvipsnames,12pt,compress]{beamer}
 \setbeamertemplate{navigation symbols}{}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{bm}
@@ -15,6 +16,7 @@
 \usepackage{textcomp} % See https://tex.stackexchange.com/questions/145416/how-to-have-straight-single-quotes-in-lstlistings
 %\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures. From https://tex.stackexchange.com/questions/238636
 \usepackage[absolute,overlay]{textpos}
+\usepackage[russian,english]{babel}
 
 
 \lstset{language=bash,upquote=true} % Format listings as appropriate for bash. Inexplicably we get problems if the language is set as part of the \begin{lstlisting} command.
@@ -33,7 +35,7 @@
   {
     \begin{tikzpicture}
       \draw (-4, 0) node[inner sep=0] {\includegraphics[{#2}]{{#1}}};
-      \draw ({#4},{#5}) node[white,fill=black,font=\footnotesize] {Credit: {#3}};
+      \draw ({#4},{#5}) node[white,fill=black,font=\tiny] {Credit: {#3}};
     \end{tikzpicture}
   }
 }
@@ -50,28 +52,15 @@
  }
 }
 
-% Parameters: file name, graphics options (e.g. `scale=0.3'), background colour
-\newcommand{\framewithimage}[3]{
-{
-  \setbeamercolor{background canvas}{bg={#3}}
-  \begin{frame}{}
-    \begin{center}
-      \begin{tikzpicture}
-        \draw (0, 0) node[inner sep=0] {\includegraphics[{#2}]{{#1}}};
-      \end{tikzpicture}
-    \end{center}
-  \end{frame}
- }
-}
 
-%Parameters: Item text, file name, graphics options, credit
-\newcommand{\itemandimageandcredit}[4]{
+%Parameters: Item text, file name, graphics options, whom to credit, x pos for credit, y pos for credit.
+\newcommand{\itemandimageandcredit}[6]{
   \begin{columns}
   \column{0.04\linewidth}
   \column{0.41\linewidth}
   \item{#1}
   \column{0.55\linewidth}
-  \imageandcredit{#2}{#3}{#4}{-4}{-1.3}
+  \imageandcredit{#2}{#3}{#4}{#5}{#6}
   \end{columns}
 }
 
@@ -126,7 +115,7 @@
     \column{0.6\linewidth}
     \centering
     % https://en.wikipedia.org/wiki/Hubble_Ultra-Deep_Field#/media/File:Hubble_ultra_deep_field_high_rez_edit1.jpg
-    \imageandcredit{720px-Hubble_ultra_deep_field_high_rez_edit1.jpg}{height=7cm}{NASA Ultra Deep Field}{-5}{-3.2}
+    \imageandcredit{720px-Hubble_ultra_deep_field_high_rez_edit1.jpg}{height=7cm}{NASA Ultra Deep Field}{-5.8}{-3.2}
   \end{columns}
 \end{frame}
 
@@ -156,9 +145,11 @@
   \begin{block}{}
     \begin{itemize}
       \item{Other forces - molecular forces between the molecules in your body, and gravitational forces between the Sun and the planets - are far more than strong enough to overcome the effect of cosmic expansion.}
+      \bigskip
     	% https://creativecommons.org/licenses/by-sa/4.0/deed.en
     	% https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Andromeda_Galaxy_560mm_FL.jpg/1024px-Andromeda_Galaxy_560mm_FL.jpg
-      \itemandimageandcredit{Gravity is even strong enough to keep the Andromeda Galaxy from receding from us.}{Andromeda_Galaxy_560mm_FL.jpg}{height=2.5cm}{David Dayag}
+      \itemandimageandcredit{Gravity is even strong enough to keep the Andromeda Galaxy from receding from us.}{Andromeda_Galaxy_560mm_FL.jpg}{height=2.5cm}{David Dayag}{-3.25}{-1.48}
+      \bigskip
 	\item{It's only the furthest objects - where gravity becomes negligible - that recede.}
     \end{itemize}
   \end{block}
@@ -169,6 +160,7 @@
   \begin{itemize}
   \item{We say `distant galaxies are moving away from us'. This is informal language.}
   \item{They aren't really moving, they just appear to be - because the intervening space is expanding.}
+  \bigskip
   \item{Sometimes this makes a difference - for example, the recession velocity can exceed the speed of light.}
   \end{itemize}
   \end{block}
@@ -179,6 +171,7 @@
   \begin{itemize}
   \item{For every additional distance of one megaparsec, there's an additional recession velocity of about 70 kilometers per second.}
   \item{So the expansion speed is about 70 kilometers per second per megaparsec.}
+  \bigskip
   \item{One megaparsec is about three million light years. It's the typical distance between galaxies.}
   \item{70 kilometers per second is about 150,000 miles per hour.}
   \end{itemize}
@@ -201,21 +194,116 @@
 \begin{frame}{$H_0$}
   \begin{block}{}
   \begin{itemize}
-  \item{The expansion rate is denoted `$H_0$'.}
+  \item{The current expansion rate is called the \textit{Hubble constant} or \textit{Hubble parameter} and is denoted `$H_0$'.}
   \bigskip
   % Image of Hubble from https://commons.wikimedia.org/wiki/File:Studio_portrait_photograph_of_Edwin_Powell_Hubble.JPG
   % Johan Hagemeyer (1884-1962), Public domain, via Wikimedia Commons
-  \itemandimageandcredit{The `$H$' commemorates Edwin Hubble (1889-1953), who was one of the first to measure it.}{Studio_portrait_photograph_of_Edwin_Powell_Hubble.jpg}{height=3cm}{Johan Hagemeyer}
+  \itemandimageandcredit{The `$H$' commemorates Edwin Hubble (1889-1953), who was one of the first to measure it.}{Studio_portrait_photograph_of_Edwin_Powell_Hubble.jpg}{height=3cm}{Johan Hagemeyer}{-4}{-1.3}
   \bigskip
   \item{The `$0$' refers to today. The expansion rate was different in the distant past.}
   \end{itemize}
   \end{block}
- \end{frame}
+\end{frame}
+
+
+\begin{frame}{Who first had the idea that the Universe is expanding?}
+  \begin{block}{}
+    \mentiinvitation{}
+    \begin{enumerate}
+      \item{Erwin Rommel}
+      \item{Edwin Hubble}
+      \item{Edgar Allan Poe}
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Who first had the idea that the Universe is expanding?}
+  \begin{block}{}
+    \mentiinvitation{}
+    \begin{enumerate}
+      \item{Erwin Rommel}
+      \item{Edwin Hubble}
+      \item{\correctanswer{Edgar Allan Poe}}
+    \end{enumerate}
+  \end{block}
+\end{frame}
 
 
 
-% Image of Hubble from https://commons.wikimedia.org/wiki/File:Studio_portrait_photograph_of_Edwin_Powell_Hubble.JPG
-\framewithimageandcredit{Studio_portrait_photograph_of_Edwin_Powell_Hubble.jpg}{angle=0,origin=l,scale=0.15}{black}{Johan Hagemeyer (1884-1962), Public domain, via Wikimedia Commons}{-4}{-3}
+\begin{frame}{History}
+  \begin{block}{}
+  \begin{itemize}
+  % https://en.wikipedia.org/wiki/Edgar_Allan_Poe#/media/File:Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg
+  %Public domain
+  \itemandimageandcredit{In 1848 Edgar Allan Poe published \textit{Eureka}, which included a description of expanding space.}{512px-Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg}{height=4cm}{Public domain}{-4}{-2.2}
+  \item{Expansion is not obvious without large telescopes and so isn't usually part of pre-modern cosmologies. Full understanding only came in the 20th century.}
+  \end{itemize}
+  \end{block}
+\end{frame}
+ 
+ 
+\begin{frame}{Why does the Universe expand?}
+  \begin{block}{}
+  \begin{itemize}
+  \item{Science is not so good with `why?' questions...}
+  \bigskip
+  \item{There's an \textit{initial condition}: the Universe started expanding at the Big Bang.}
+  \bigskip
+  \item{The later behviour of the expansion (does it slow down? speed up?) then depends, essentially via gravity, on \textit{what's in the Universe}.}
+  \end{itemize}
+  \end{block}
+\end{frame}
+  
+  
+\begin{frame}{Why does gravity play a role?}
+  \begin{block}{}
+  \begin{itemize}
+  %https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/08608_einstein_1916.jpg/512px-08608_einstein_1916.jpg  
+  \itemandimageandcredit{\textit{General relativity}, our modern theory of gravity, is due to Einstein (1916).}{08608_einstein_1916.jpg}{height=6cm}{Paul Ehrenfest}{-5.03}{-3.2}
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Why does gravity play a role?}
+  \begin{block}{}
+  \begin{itemize}
+  \item{Remember \textit{mass} and \textit{energy} are the same ($E=mc^2$).}
+  \bigskip
+  \itemandimageandcredit{Mass/Energy \textit{bends} spacetime, essentially changing distances and angles.}{800px-Spacetime_lattice_analogy.svg.png}{height=2cm}{Mysid}{-4}{-1.3}
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Why does gravity play a role?}
+  \begin{block}{}
+  \begin{itemize}
+  \item{This `changing of distances and angles' works locally; the distorted spacetime governs how objects move, and this leads e.g. to the apple falling from the tree.}
+  \bigskip
+  \pause
+  \item{But it also works on the Universe as a whole - mass/energy can cause distances to change \textit{everywhere} in the Universe - and in particular can lead to increasing distances everywhere. This is the expansion that we see.}
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Contents of Universe control expansion}
+  \begin{block}{}
+  \begin{itemize}
+  %https://upload.wikimedia.org/wikipedia/commons/6/62/Aleksandr_Fridman.png
+  \itemandimageandcredit{It was Alexander Friedmann (\begin{otherlanguage*}{russian}Алекс\'{а}ндр Алекс\'{а}ндрович Фр\'{и}дман\end{otherlanguage*}) (1888-1925) who first realised this (1922).}{Aleksandr_Fridman.png}{height=6cm}{Public domain}{-4}{-3.2}
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{What if we go backwards in time?}
+  \begin{block}{}
+  \begin{itemize}
+  %https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Georges_Lema%C3%AEtre_1930s.jpg/512px-Georges_Lema%C3%AEtre_1930s.jpg
+  \itemandimageandcredit{George Lama\^itre (1894-1966) realised that if the Universe was expanding then it must, at an earlier stage, have been very small; he thereby invented the idea of the `Big Bang'.}{512px-Georges_Lemaitre_1930s.jpg}{height=6cm}{Public domain}{-4}{-3.2}
+  \end{itemize}
+  \end{block}
+\end{frame}
 
 
 

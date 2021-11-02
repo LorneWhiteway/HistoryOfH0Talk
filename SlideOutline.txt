@@ -12,11 +12,13 @@ xRubber band example with bound system
 xWhat does recession velocity mean? Objects are 'moving'. SR doesn't apply.
 xQuoting the speed of expansion
 xCurrent expansion rate. H0. 70 km/s/Mpc
-History - Not part of early cosmologies. Poe (1848). Then 20th century.
-Why does the Universe expand? Initial condition; subsequent behaviour set by gravity.
-Why Gravity? Modern theory of gravity. Picture; Einstein.
-Mass/energy affects distances/angles. So contents of Universe affect expansion.
-Freidmann wrote down the equations. Picture: Freidmann.
+xMENTI question: Poe
+xHistory - Not part of early cosmologies. Poe (1848). Then 20th century.
+xWhy does the Universe expand? Initial condition; subsequent behaviour set by gravity.
+xWhy Gravity? Modern theory of gravity. Picture; Einstein.
+xMass/energy affects distances/angles. So contents of Universe affect expansion.
+xFreidmann wrote down the equations. Picture: Freidmann.
+xLamaitre; big bang
 [Contents of Universe? or do this later?]
 Measuring expansion rate. Need recession velocity and distance
 MENTI question: Which is easier to measure?
