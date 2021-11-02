@@ -2,7 +2,8 @@
 % http://latex.artikel-namsu.de/english/beamer-examples.html
 
 %\documentclass{beamer}
-\documentclass[usenames,dvipsnames]{beamer}
+\documentclass[usenames,dvipsnames,12pt,compress]{beamer}
+\setbeamertemplate{navigation symbols}{}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{bm}
@@ -75,9 +76,8 @@
 }
 
 
-
-\usetheme{boxes}
-\usecolortheme{beaver}
+%\usetheme{boxes}
+%\usecolortheme{beaver}
 
 
 \title{The Constantly Changing Hubble Constant}
@@ -120,7 +120,7 @@
   \begin{columns}
     \column{0.4\linewidth}
     \begin{itemize}
-    \item{Everywhere we look, distant galaxies are receeding; more distant galaxies are receeding faster.}
+    \item{Everywhere we look, distant galaxies are receding; more distant galaxies are receding faster.}
     \item{So either we are at the centre of a cosmic conspiracy, or all the space between all the galaxies is expanding.}
     \end{itemize}
     \column{0.6\linewidth}
@@ -158,8 +158,8 @@
       \item{Other forces - molecular forces between the molecules in your body, and gravitational forces between the Sun and the planets - are far more than strong enough to overcome the effect of cosmic expansion.}
     	% https://creativecommons.org/licenses/by-sa/4.0/deed.en
     	% https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Andromeda_Galaxy_560mm_FL.jpg/1024px-Andromeda_Galaxy_560mm_FL.jpg
-      \itemandimageandcredit{Gravity is even strong enough to keep the Andromeda Galaxy from receeding from us.}{Andromeda_Galaxy_560mm_FL.jpg}{height=2.5cm}{David Dayag}
-	\item{It's only the furthest objects - where gravity becomes negligible - that receed.}
+      \itemandimageandcredit{Gravity is even strong enough to keep the Andromeda Galaxy from receding from us.}{Andromeda_Galaxy_560mm_FL.jpg}{height=2.5cm}{David Dayag}
+	\item{It's only the furthest objects - where gravity becomes negligible - that recede.}
     \end{itemize}
   \end{block}
 \end{frame}
@@ -167,7 +167,7 @@
 \begin{frame}{What does \textit{recession velocity} actually mean?}
   \begin{block}{}
   \begin{itemize}
-  \item{We speak as if the distant galaxies are moving away from us. This is informal language.}
+  \item{We say `distant galaxies are moving away from us'. This is informal language.}
   \item{They aren't really moving, they just appear to be - because the intervening space is expanding.}
   \item{Sometimes this makes a difference - for example, the recession velocity can exceed the speed of light.}
   \end{itemize}
@@ -177,24 +177,37 @@
 \begin{frame}{So how fast is the expansion?}
   \begin{block}{}
   \begin{itemize}
-  \item{For every increase in distance of one megaparsec, there's an increase in recession velocity of 70 kilometers per second.}
-  \item{So the expansion speed is 70 kilometers per second per megaparsec.}
+  \item{For every additional distance of one megaparsec, there's an additional recession velocity of about 70 kilometers per second.}
+  \item{So the expansion speed is about 70 kilometers per second per megaparsec.}
   \item{One megaparsec is about three million light years. It's the typical distance between galaxies.}
   \item{70 kilometers per second is about 150,000 miles per hour.}
-  \item{Over 13.5 million years, distances increase by about one percent.}
-  \item{Continental drift is about six times faster.}
   \end{itemize}
   \end{block}
 \end{frame}
 
-\begin{frame}{H0}
+\begin{frame}{So how fast is the expansion?}
+    \begin{tikzpicture}
+    \node at (4,1) {Start with:};
+    \draw [very thick] (0,0)--(10,0);
+    \pause
+    \node at (4,-2) {13.5 million years later:};
+    \draw [very thick] (0,-3)--(10.1,-3);
+    \pause
+    \node at (4,-5) {Continental drift is about six times faster...};
+    \end{tikzpicture}
+\end{frame}
+
+
+\begin{frame}{$H_0$}
   \begin{block}{}
   \begin{itemize}
-  \item{The expansion rate is denoted `H0'.}
+  \item{The expansion rate is denoted `$H_0$'.}
+  \bigskip
   % Image of Hubble from https://commons.wikimedia.org/wiki/File:Studio_portrait_photograph_of_Edwin_Powell_Hubble.JPG
   % Johan Hagemeyer (1884-1962), Public domain, via Wikimedia Commons
-  \itemandimageandcredit{The `H' commemorates Edwin Hubble (1889-1953), who was one of the first to measure it.}{Studio_portrait_photograph_of_Edwin_Powell_Hubble.jpg}{height=3cm}{Johan Hagemeyer}
-  \item{The `0' refers to today. The expansion rate was different in the distant past.}
+  \itemandimageandcredit{The `$H$' commemorates Edwin Hubble (1889-1953), who was one of the first to measure it.}{Studio_portrait_photograph_of_Edwin_Powell_Hubble.jpg}{height=3cm}{Johan Hagemeyer}
+  \bigskip
+  \item{The `$0$' refers to today. The expansion rate was different in the distant past.}
   \end{itemize}
   \end{block}
  \end{frame}
