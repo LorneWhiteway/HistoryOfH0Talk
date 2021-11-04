@@ -20,8 +20,8 @@ xMass/energy affects distances/angles. So contents of Universe affect expansion.
 xFreidmann wrote down the equations. Picture: Freidmann.
 xLamaitre; big bang
 [Contents of Universe? or do this later?]
-Measuring expansion rate. Need recession velocity and distance
-MENTI question: Which is easier to measure?
+xMeasuring expansion rate. Need recession velocity and distance
+xMENTI question: Which is easier to measure?
 Speed from Doppler-like shift in spectrum - relatively easy. Picture: Vesto Slipher. First to relate redshifts to distance.
 Distance - parallax, but only so far.
 Standard candles. Cepheids. Picture: Henrietta Swan Leavitt.
