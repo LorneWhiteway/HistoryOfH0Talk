@@ -16,7 +16,9 @@
 \usepackage{textcomp} % See https://tex.stackexchange.com/questions/145416/how-to-have-straight-single-quotes-in-lstlistings
 %\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures. From https://tex.stackexchange.com/questions/238636
 \usepackage[absolute,overlay]{textpos}
+\usepackage[T1,T2A]{fontenc} % See https://tex.stackexchange.com/questions/135118
 \usepackage[russian,english]{babel}
+\usepackage{url}
 
 
 \lstset{language=bash,upquote=true} % Format listings as appropriate for bash. Inexplicably we get problems if the language is set as part of the \begin{lstlisting} command.
@@ -72,25 +74,11 @@
 \title{The Constantly Changing Hubble Constant}
 \author{Lorne Whiteway \\ lorne.whiteway@star.ucl.ac.uk}
 \institute{Astrophysics Group \\ Department of Physics and Astronomy \\ University College London}
-\date{Presentation to the Mid Kent Astronomical Society \\ 12 November 2021 \\ Find the presentation at \alert{\url{https://tinyurl.com/bycke8v6}}}
+\date{Presentation to the Mid Kent Astronomical Society \\ 12 November 2021 \\ You are invited to go to \alert{\mentiurl{}} and enter code \menticode{}.}
 
 \begin{document}
 
 \frame{\titlepage}
-
-
-\begin{frame}{Interactive content}
-  \begin{block}{}
-    You are invited to go to\\
-    \begin{center}
-    \huge \alert{\mentiurl{}}\\
-    \end{center}
-    and enter code\\
-    \begin{center}
-    \huge \menticode{}
-    \end{center}
-  \end{block}
-\end{frame}
 
 
 \begin{frame}{The Universe is expanding!}
@@ -115,7 +103,6 @@
     \end{itemize}
     \column{0.6\linewidth}
     \centering
-    % https://en.wikipedia.org/wiki/Hubble_Ultra-Deep_Field#/media/File:Hubble_ultra_deep_field_high_rez_edit1.jpg
     \imageandcredit{720px-Hubble_ultra_deep_field_high_rez_edit1.jpg}{height=7cm}{NASA Ultra Deep Field}{-5.8}{-3.2}
   \end{columns}
 \end{frame}
@@ -150,8 +137,6 @@
     \begin{itemize}
       \item{Other forces - molecular forces between the molecules in your body, and gravitational forces between the Sun and the planets - are far more than strong enough to overcome the effect of cosmic expansion.}
       \bigskip
-    	% https://creativecommons.org/licenses/by-sa/4.0/deed.en
-    	% https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Andromeda_Galaxy_560mm_FL.jpg/1024px-Andromeda_Galaxy_560mm_FL.jpg
       \itemandimageandcredit{Gravity is even strong enough to keep the Andromeda Galaxy from receding from us.}{Andromeda_Galaxy_560mm_FL.jpg}{height=2.5cm}{David Dayag}{-3.25}{-1.48}
       \bigskip
 	\item{It's only the furthest objects - where gravity becomes negligible - that recede.}
@@ -199,8 +184,6 @@
 \begin{frame}{History}
   \begin{block}{}
   \begin{itemize}
-  % https://en.wikipedia.org/wiki/Edgar_Allan_Poe#/media/File:Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg
-  %Public domain
   \itemandimageandcredit{In 1848 Edgar Allan Poe published \textit{Eureka}, which included a description of expanding space.}{512px-Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg}{height=4cm}{Public domain}{-4}{-2.2}
   \item{Expansion is not obvious without large telescopes and so isn't usually part of pre-modern cosmologies. Full understanding only came in the 20th century.}
   \end{itemize}
@@ -239,8 +222,6 @@
   \begin{itemize}
   \item{The current expansion rate is called the \textit{Hubble constant} or \textit{Hubble parameter} and is denoted `$H_0$'.}
   \bigskip
-  % Image of Hubble from https://commons.wikimedia.org/wiki/File:Studio_portrait_photograph_of_Edwin_Powell_Hubble.JPG
-  % Johan Hagemeyer (1884-1962), Public domain, via Wikimedia Commons
   \itemandimageandcredit{The `$H$' commemorates Edwin Hubble (1889-1953), who was one of the first to measure it.}{Studio_portrait_photograph_of_Edwin_Powell_Hubble.jpg}{height=3cm}{Johan Hagemeyer}{-4}{-1.3}
   \bigskip
   \item{The `$0$' refers to today. The expansion rate was different in the distant past.}
@@ -265,7 +246,6 @@
 \begin{frame}{Why does gravity play a role?}
   \begin{block}{}
   \begin{itemize}
-  %https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/08608_einstein_1916.jpg/512px-08608_einstein_1916.jpg  
   \itemandimageandcredit{\textit{General relativity}, our modern theory of gravity, is due to Einstein (1916).}{08608_einstein_1916.jpg}{height=6cm}{Paul Ehrenfest}{-5.03}{-3.2}
   \end{itemize}
   \end{block}
@@ -298,7 +278,6 @@
 \begin{frame}{Contents of Universe control expansion}
   \begin{block}{}
   \begin{itemize}
-  %https://upload.wikimedia.org/wikipedia/commons/6/62/Aleksandr_Fridman.png
   \itemandimageandcredit{It was Alexander Friedmann (\begin{otherlanguage*}{russian}Алекс\'{а}ндр Алекс\'{а}ндрович Фр\'{и}дман\end{otherlanguage*}) (1888-1925) who first realised this (1922).}{Aleksandr_Fridman.png}{height=6cm}{Public domain}{-4}{-3.2}
   \end{itemize}
   \end{block}
@@ -358,6 +337,33 @@
   %https://commons.wikimedia.org/wiki/File:Redshift.svg
   \itemandimageandcredit{It's fairly easy to measure the amount of red-shifting, as spectral lines are a convenient reference point. The redshift then immediately gives the velocity.}{256px-Redshift.svg.png}{height=4cm}{Georg Wiora}{-4}{-2}
   \end{itemize}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Where to find the document}
+  \begin{block}{}
+  \begin{itemize}
+  \item{You can find the presentation at \alert{\url{https://tinyurl.com/bycke8v6}}}
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Image credits}
+  \begin{block}{}
+  \begin{enumerate}
+  \tiny {
+  \item{Hubble Deep Field: Source: NASA. From \url{https://en.wikipedia.org/wiki/File:Hubble_ultra_deep_field_high_rez_edit1.jpg}}
+  \item{M31: Source: David Dayag. Licensed under the Creative Commons Attribution-Share Alike 4.0 International license \url{https://creativecommons.org/licenses/by-sa/4.0/deed.en}. From \url{https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Andromeda_Galaxy_560mm_FL.jpg/1024px-Andromeda_Galaxy_560mm_FL.jpg}.}
+  \item{Poe: Source: Public domain. From \url{https://en.wikipedia.org/wiki/Edgar_Allan_Poe\#/media/File:Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg}}
+  \item{Hubble: Source: Public domain (by Johan Hagemeyer (1884-1962)). From \url{https://commons.wikimedia.org/wiki/File:Studio_portrait_photograph_of_Edwin_Powell_Hubble.JPG}}
+  \item{Einstein: Source: Public domain. From \url{https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/08608_einstein_1916.jpg/512px-08608_einstein_1916.jpg}}
+  \item{Curved spacetime: Source: Mysid. Licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license \url{https://creativecommons.org/licenses/by-sa/3.0/deed.en}. From \url{https://commons.wikimedia.org/wiki/File:Spacetime_lattice_analogy.svg}}
+  \item{Friedmann: Source: Public domain. From \url{https://upload.wikimedia.org/wikipedia/commons/6/62/Aleksandr_Fridman.png}}
+  \item{Lema\^itre: Source: Public domain. From \url{https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Georges_Lema\%C3\%AEtre_1930s.jpg/512px-Georges_Lema\%C3\%AEtre_1930s.jpg}}  
+  } % end footnotesize
+  \end{enumerate}
   \end{block}
 \end{frame}
 
