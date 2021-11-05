@@ -22,7 +22,7 @@ xLamaitre; big bang
 [Contents of Universe? or do this later?]
 xMeasuring expansion rate. Need recession velocity and distance
 xMENTI question: Which is easier to measure?
-Speed from Doppler-like shift in spectrum - relatively easy. Picture: Vesto Slipher. First to relate redshifts to distance.
+xSpeed from Doppler-like shift in spectrum - relatively easy. Picture: Vesto Slipher. First to relate redshifts to distance.
 Distance - parallax, but only so far.
 Standard candles. Cepheids. Picture: Henrietta Swan Leavitt.
 Hubble (1929) assembled the results. Picture: Hubble. Hubble graph.
