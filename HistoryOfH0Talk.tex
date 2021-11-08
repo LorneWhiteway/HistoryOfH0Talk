@@ -29,7 +29,7 @@
 
 \newcommand{\mentiurl}[0]{{\url{www.menti.com}}}
 \newcommand{\menticode}[0]{{14 11 05 9}}
-\newcommand{\mentiinvitation}[0]{Go to \mentiurl{} (code \menticode{}) and choose one possibility:\\}
+\newcommand{\mentiinvitation}[0]{Go to \mentiurl{} (code \menticode{}) and choose:\\}
 \newcommand{\correctanswer}[1]{\textcolor{blue}{{#1} \checkmark}}
 
 % Parameters: file name, graphics options (e.g. `scale=0.3'), whom to credit, x pos for credit, y pos for credit.
@@ -88,7 +88,8 @@
   \item{How do we know it is expanding?}
   \item{Why is it expanding?}
   \item{How fast is it expanding?}
-  \item{Are cosmologists completely realistic about the uncertainties in their results?}
+  \item{How do we know how fast it is expanding?}
+  \item{Is the expansion rate changing?}
   \end{itemize}
   \end{block}
 \end{frame}
@@ -151,7 +152,7 @@
   \item{We say `distant galaxies are moving away from us'. This is informal language.}
   \item{They aren't really moving, they just appear to be - because the intervening space is expanding.}
   \bigskip
-  \item{Sometimes this makes a difference - for example, the recession velocity can exceed the speed of light.}
+  \item{Sometimes this distinction is important - for example, the recession velocity can exceed the speed of light.}
   \end{itemize}
   \end{block}
 \end{frame}
@@ -303,24 +304,24 @@
 \end{frame}
 
 
-\begin{frame}{For a distant galaxy, which is harder to measure?}
-    \mentiinvitation{}
-    \begin{enumerate}
-      \item{Recession velocity}
-      \item{Distance}
-      \item{They are about the same difficulty}
-    \end{enumerate}
-\end{frame}
+%\begin{frame}{For a distant galaxy, which is harder to measure?}
+%    \mentiinvitation{}
+%    \begin{enumerate}
+%      \item{Recession velocity}
+%      \item{Distance}
+%      \item{They are about the same difficulty}
+%    \end{enumerate}
+%\end{frame}
 
 
-\begin{frame}{For a distant galaxy, which is harder to measure?}
-    \mentiinvitation{}
-    \begin{enumerate}
-      \item{Recession velocity}
-      \item{\correctanswer{Distance}}
-      \item{They are about the same difficulty}
-    \end{enumerate}
-\end{frame}
+%\begin{frame}{For a distant galaxy, which is harder to measure?}
+%    \mentiinvitation{}
+%    \begin{enumerate}
+%      \item{Recession velocity}
+%      \item{\correctanswer{Distance}}
+%      \item{They are about the same difficulty}
+%    \end{enumerate}
+%\end{frame}
 
 
 \begin{frame}{Can use \textit{redshift} to measure recession velocity}
@@ -353,16 +354,16 @@
 \end{frame}
 
 
-\begin{frame}{Distance measurements - Cepheids}
+\begin{frame}{Can use Cepheids to measure distance}
 \begin{itemize}
-\item{Cosmic distances can be estimated using variable stars called \textit{Cepheids}. We know how much light they produce (it's related to their period). Their observed brightness then tells us their distance.}
+\item{Cosmic distances can be estimated using variable stars called \textit{Cepheids}. We know how much light they produce (it's related to their period) - so they are \textit{standard candles}. Their observed brightness then tells us their distance.}
 %https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Leavitt_aavso.jpg/256px-Leavitt_aavso.jpg
 \itemandimageandcredit{The brightness/period relation was discovered by Henrietta Swan Leavitt (1868 - 1921) at Harvard.}{256px-Leavitt_aavso.jpg}{height=5cm}{Public Domain}{-4}{-3}
 \end{itemize}
 \end{frame}
 
 
-\begin{frame}{How distant is that Cepheid?}
+\begin{frame}{How far away is that Cepheid?}
   \begin{block}{}
   $A$ and $B$ are two identical Cepheids; $A$ is 100 parsecs distant; $B$ is $4\%$ of the brightness of $A$. How far is $B$?
   \end{block}
@@ -377,7 +378,7 @@
 \end{frame}
 
 
-\begin{frame}{How distant is that Cepheid?}
+\begin{frame}{How far away is that Cepheid?}
   \begin{block}{}
   $A$ and $B$ are two identical Cepheids; $A$ is 100 parsecs distant; $B$ is $4\%$ of the brightness of $A$. How far is $B$?
   \end{block}
@@ -392,10 +393,12 @@
 \end{frame}
 
 
-\begin{frame}{Linear relationship between recession velocity and distance}
+\begin{frame}{Recession velocity vs distance relationship}
   \begin{itemize}
-    \item{It was Lama\^itre who first suggested a linear relationship between recession velocity and distance.}
-    \item{Hubble then provided supporting evidence - he used the 100 inch telescope at Mt Wilson to spot Cepheids in a range of galaxies.}
+  % https://upload.wikimedia.org/wikipedia/commons/c/c6/MillikanLemaitreEinstein.jpg
+    \itemandimageandcredit{It was Lamaitre who first suggested a linear relationship between recession velocity and distance.}{MillikanLemaitreEinstein.jpg}{height=3cm}{Public domain}{-4}{-1.3}
+    % https://www.npr.org/2015/04/25/401843663/hubbles-other-telescope-and-the-day-it-rocked-our-world?t=1636381997027
+    \itemandimageandcredit{Hubble then provided supporting evidence - he used the 100 inch telescope at Mt Wilson to spot Cepheids in a range of galaxies.}{edwin-hubble_custom-1ba7b4eff9a01a9787734122a061ed1926acd23c-s300-c85.jpg}{height=3cm}{Edwin Hubble Papers}{-4}{-1.3}
   \end{itemize}
 \end{frame}
 
@@ -405,6 +408,109 @@
 \includegraphics[height=6.8cm]{F2.large.jpg}
 \end{frame}
 
+
+\begin{frame}{What value for $H_0$ does this plot give?}
+  \begin{block}{}
+  %https://www.pnas.org/content/15/3/168/tab-figures-data
+  \includegraphics[height=4cm]{F2.large.jpg}
+  \end{block}
+  \begin{block}{}
+    \mentiinvitation{}
+    \begin{enumerate}
+      \item{70 km per second per megaparsec}
+      \item{100 km per second per megaparsec}
+      \item{500 km per second per megaparsec}
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{What value for $H_0$ does this plot give?}
+  \begin{block}{}
+%https://www.pnas.org/content/15/3/168/tab-figures-data
+  \includegraphics[height=4cm]{F2.large.jpg}
+  \end{block}
+  \begin{block}{}
+    \mentiinvitation{}
+    \begin{enumerate}
+      \item{70 km per second per megaparsec}
+      \item{100 km per second per megaparsec}
+      \item{\correctanswer{500 km per second per megaparsec}}
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Falling estimates of $H_0$ 1920 - 1980}
+  % https://iopscience.iop.org/article/10.1086/133837/meta
+    \imageandcredit{Trimble_HistoryOfHubbleConstant.png}{height=7cm}{Trimble}{1.5}{-2.3}
+\end{frame}
+
+
+\begin{frame}{Distances had been underestimated}
+   Several revisions (distance up, $H_0$ down) followed:
+    \begin{enumerate}
+      \item{Two types of Cepheids}
+      \item{Interstellar absorption of light}
+      % https://mathshistory.st-andrews.ac.uk/Biographies/Scott_Elizabeth/Scott_Elizabeth.jpeg
+      \itemandimageandcredit{Scott effect (visible galaxies tend to be brighter than average)}{Scott_Elizabeth.jpeg}{height=3cm}{MacTutor}{-4}{-1.3}
+      \item{Regions of hot gas were being misidentified as bright stars}
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Hubble Space Telescope}
+  \begin{itemize}
+  \item{The Hubble Space Telescope was built (in part) to measure $H_0$.}
+ % By pollosaurio from Canada - Wendy Freedman, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=50909535
+ % https://creativecommons.org/licenses/by/2.0/
+  \itemandimageandcredit{Lead investigator Wendy Freedman.}{Wendy_Freedman_4617812603.jpg}{height=2.5cm}{pollosaurio}{-4}{-1.3}
+  \item{Used supernovae as additional standard candles.}
+  \item{$H_0 = 72 \pm 8$ kilometers per second per megaparsec.}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{More recent values - diverging opinion}
+  \imageandcredit{Freedman_RecentHistoryOfH0.png}{height=7cm}{W. Freedman}{0}{-3.2}
+\end{frame}
+
+
+\begin{frame}{More recent values - diverging opinion}
+  \begin{block}{}
+  % https://arxiv.org/abs/1706.02739 	
+  \imageandcredit{Freedman_RecentHistoryOfH0.png}{height=4cm}{W. Freedman}{1}{-1}
+  \end{block}
+  \begin{block}{}
+  \begin{itemize}
+  \item{Blue results use standard candles: $H_0 = 74 \pm 1.4$ kilometers per second per megaparsec.}
+  \item{Red results use data from the early Universe: $67.4 \pm 0.6$ kilometers per second per megaparsec.}
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{$H_0$ from early Universe data}
+  \begin{itemize}
+  \item{For 300,000 years after the Big Bang, the Universe was opaque. Then it became transparent, and we can today observe (red-shifted) light from then (the \textit{Cosmic Microwave Background)}.}
+  \item{The distance that light could travel in those 300,000 years can be seen statistically in these observations. Trigonometry then gives us the distance the light has travelled.}
+  \item{Redshift is easy - the spectrum has a prominent peak.}
+  \item{Finally, correct for the evolution of $H_0$ from then to now.}
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Hubble tension}
+  \begin{block}{}
+  % https://arxiv.org/abs/1706.02739 	
+  \imageandcredit{Freedman_RecentHistoryOfH0.png}{height=4cm}{W. Freedman}{1}{-1}
+  \end{block}
+  \begin{block}{}
+  \begin{itemize}
+  \item{Should we be worried by the discrepancy?}
+  \item{It could require that a revision to our theory. But it might also just be a systematic error in one of the measurements.}
+  \end{itemize}
+  \end{block}
+\end{frame}
 
 
 
