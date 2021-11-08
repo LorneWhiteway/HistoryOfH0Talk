@@ -23,13 +23,12 @@ xLamaitre; big bang
 xMeasuring expansion rate. Need recession velocity and distance
 xMENTI question: Which is easier to measure?
 xSpeed from Doppler-like shift in spectrum - relatively easy. Picture: Vesto Slipher. First to relate redshifts to distance.
-Distance - parallax, but only so far.
-Standard candles. Cepheids. Picture: Henrietta Swan Leavitt.
-Hubble (1929) assembled the results. Picture: Hubble. Hubble graph.
+xDistance - parallax, but only so far.
+xStandard candles. Cepheids. Picture: Henrietta Swan Leavitt.
+xHubble (1929) assembled the results. Picture: Hubble. Hubble graph.
 MENTI question: What H0 does this give?
-Result: H0 = 700 km/s/Mpc. Wrong!
-Trimble graph. 5 distinct amendments made over next 40 years, to get H0 between 50 and 100.
-Almost everyone underestimated their errors!
+Result: H0 = 500 km/s/Mpc. Wrong!
+Trimble graph. 5 distinct amendments made over next 40 years, to get H0 between 50 and 100. Almost everyone underestimated their errors!
 HST. Picture Wendy Freedman.
 Currently (at least) 3 methods for measuring H0: parallax+cepheids+supernovae, CMB, gravitational waves
 Some discrepancy - should this be a worry?
