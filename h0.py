@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+# Use this script to generate the 'history of H0' plot.
+# Reads a data file: two columns (age in Gy, H0 in km/s/Mpc).
+# Can use https://cosmocalc.icrar.org/ to generate this data.
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d

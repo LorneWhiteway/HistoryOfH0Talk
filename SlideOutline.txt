@@ -1,7 +1,6 @@
 Slide Outline
 
-xTitle slide
-xMentimeter slide
+xTitle slide, Mentimeter instructions
 xUniverse is expanding - distances between distant objects are increasing
 xEverywhere we look, distant objects are receeding. The further the object, the faster.
 xEasiest explanation is expansion.
@@ -31,6 +30,6 @@ xTrimble graph. 5 distinct amendments made over next 40 years, to get H0 between
 xHST. Picture Wendy Freedman.
 xCurrently (at least) 3 methods for measuring H0: parallax+cepheids+supernovae, CMB, gravitational waves
 xSome discrepancy - should this be a worry?
-Return to contents of Universe.
-Cosmic inventory; consequences for H0. H0 history graph.
+xReturn to contents of Universe.
+xCosmic inventory; consequences for H0. H0 history graph.
 
